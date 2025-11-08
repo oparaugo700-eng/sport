@@ -1,0 +1,84 @@
+.main_aside {
+  background-color: gainsboro;
+  display: flex;
+  padding: 2em;
+  margin-top: 4em;
+}
+
+.aside_div {
+  margin-inline: auto;
+}
+
+.aside_h4 {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+aside p {
+  line-height: 2;
+}
+aside span {
+  font-weight: 600;
+}
+
+.section_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3em 0;
+  /* margin-inline: auto; */
+}
+
+.section_img {
+  width: 60vw;
+  height: 50vh;
+}
+
+.blockquote {
+  font-style: italic;
+  margin: 2em;
+}
+
+@media (width < 1062px) {
+  .section_img {
+    height: 30vh;
+  }
+}
+@media (width < 800px) {
+  .section_img {
+    width: 65vw;
+  }
+}
+@media (width < 700px) {
+  .section_img {
+    width: 70vw;
+  }
+}
+@media (width < 600px) {
+  .section_img {
+    width: 75vw;
+  }
+}
+@media (width < 500px) {
+  .section_img {
+    width: 80vw;
+  }
+}
+@media (width < 450px) {
+  .section_img {
+    width: 90vw;
+  }
+}
+
+/* @media (width < 720px) {
+  .section_img {
+    width: 90vw;
+    height: 50vh;
+  }
+}
+@media (width < 425px) {
+  .section_img {
+    width: 90vw;
+    height: 30vh;
+  }
+} */

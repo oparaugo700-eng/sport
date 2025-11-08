@@ -1,8 +1,25 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --boder: #171717;
+  --boxshadow: rgba(0, 0, 0, 0.301);
+
+  /*Big Text*/
+  --big-text: clamp(2rem, 3vw, 3.1rem);
+  /*medium Text*/
+  --medium-text: clamp(1.7rem, 2.5vw, 2.7rem);
+  /*small Text*/
+  --small-text: clamp(1.3rem, 2vw, 2.5rem);
+  /*little Text*/
+  --little-text: clamp(1rem, 1.5vw, 2rem);
 }
 
+[data-theme="dark"] {
+  --background: black;
+  --foreground: white;
+  --boder: white;
+  --boxshadow: hsl(0, 1%, 27%);
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -28,6 +45,7 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  transition: all 0.5s ease-in-out;
 }
 
 a {

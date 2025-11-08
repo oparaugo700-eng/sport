@@ -1,0 +1,51 @@
+.main_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 75vh;
+  gap: 1em;
+}
+
+.ul_login {
+  list-style: none;
+  line-height: 2.5;
+}
+
+.ul_login li {
+  border: 2px solid;
+  margin-bottom: 1em;
+  border-radius: 2em;
+  padding: 0 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6em;
+  transition: 0.5s ease-in-out;
+}
+
+.login_icon {
+  font-size: 2rem;
+  margin-top: 0.3em;
+}
+
+.facebook {
+  color: rgb(38, 38, 214);
+}
+
+.instagram {
+  color: hsl(350, 78%, 57%);
+}
+.li1:hover {
+  background-color: whitesmoke;
+  /* color: whitesmoke; */
+}
+.li2:hover {
+  background-color: hsla(240, 70%, 49%, 0.774);
+  color: whitesmoke;
+}
+
+.li3:hover {
+  background-color: hsla(350, 86%, 72%, 0.863);
+  color: whitesmoke;
+}

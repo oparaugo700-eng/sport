@@ -1,0 +1,73 @@
+.comment_main {
+  background-color: rgba(189, 188, 188, 0.459);
+  box-shadow: 6px 6px 9px rgba(158, 148, 148, 0.288);
+  padding: 4em 4em 1em;
+}
+
+.comment_ul {
+  margin-bottom: 2em;
+  font-size: var(--little-text);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 50vw;
+}
+
+.comment-li {
+  padding: 1em;
+  border: 1px solid;
+  list-style: none;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form_textarea {
+  width: 50vw;
+  height: 18vh;
+  font-size: var(--little-text);
+}
+.form_textarea:focus {
+  border: none;
+}
+
+.form_button {
+  padding: 0.4em;
+  background-color: aqua;
+  border: none;
+  width: 100px;
+  height: 40px;
+  border-radius: 1em;
+}
+
+.form_button:hover {
+  background-color: hsl(180, 93%, 71%);
+}
+.form_button:active {
+  background-color: hsl(180, 97%, 38%);
+}
+
+@media (width <750px) {
+  .comment_main {
+    padding: 2em 2em 1em;
+  }
+  .form_textarea {
+    width: 80vw;
+    height: 18vh;
+  }
+}
+
+@media (width < 600px) {
+  .comment_ul {
+    width: 70vw;
+  }
+}
+@media (width < 400px) {
+  .comment_ul {
+    width: 80vw;
+  }
+}
