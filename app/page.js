@@ -4,7 +4,7 @@ import styles from "./page.module.css";
 import React, { useState } from "react";
 import Link from "next/link";
 import Slider from "./sliders/Sider";
-import Comment from "./comment/Comment";
+import Comment from "./comment/comments";
 
 export default function Home() {
   const players = [

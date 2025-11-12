@@ -4,6 +4,11 @@ import './comment.css'
 import { Button } from '@mui/material'
 
 export default function Comment() {
+    const date = new Date()
+    const day = date.getDate().toString().padStart(2, "0")
+    const month = (date.getMonth() + 1).toString().padStart(2, "0")
+    const year = date.getFullYear()
+    const fullDate = `${day}-${month}-${year}`
     const [comments, setComments] = useState([])
     const inputRef = useRef(null)
 
@@ -36,8 +41,13 @@ export default function Comment() {
                 {comments.map((comment, index) => {
                     return (
                         <div key={index} >
-                            <li className='comment-li'>{comment}</li>
+                            <div className='wrapper'>
+                                <p className='date_style'>{fullDate}</p>
+                                <li className='comment-li'>{comment}</li>
+
+                            </div>
                             <Button className='comment-div' onClick={() => removeComment(index)}>Remove</Button>
+
                         </div>
                     )
                 }
