@@ -6,9 +6,11 @@ import { FaFacebook } from 'react-icons/fa6'
 import { FaInstagram } from 'react-icons/fa'
 
 
-export default async function Login() {
-    const session = await auth()
-    console.log(session)
+
+export default function Login() {
+
+    // const session = await auth()
+    // // console.log(session)
     return (
         <main className='main_login'>
             <h1 className='h1_login'>Join Get-Sporty</h1>
@@ -43,7 +45,7 @@ export default async function Login() {
             <form
                 action={async () => {
                     "use server"
-                    await signOut({ redirectTo: "/" })
+                    await signOut()
                 }}
                 className='ul_login '
             >

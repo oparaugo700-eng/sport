@@ -1,8 +1,6 @@
-// "use client"
 import React from 'react'
 import { Button } from '@mui/material'
 import './component.css'
-import { CgProfile } from 'react-icons/cg'
 import Link from 'next/link'
 import Theme from '/component/Theme'
 import { auth } from '@/auth'
