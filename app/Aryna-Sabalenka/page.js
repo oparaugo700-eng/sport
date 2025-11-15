@@ -1,5 +1,5 @@
 import React from 'react'
-import '/app/Cristiano-Ronaldo/c_r.css'
+import '../css/page1.css'
 
 export default function page() {
     return (
