@@ -18,7 +18,7 @@
   margin-bottom: 1em;
   border-radius: 2em;
   width: 400px;
-  padding: 0 2em;
+  padding: 0.1em 2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,7 +31,8 @@ button {
 
 .login_icon {
   font-size: 2rem;
-  margin-top: 0.3em;
+  /* margin-top: 0.3em; */
+  /* text-align: center; */
 }
 
 .facebook {
